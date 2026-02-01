@@ -2,6 +2,14 @@
 
 Based on review of 30+ tools and research papers.
 
+## Related Documents
+
+| 문서 | 위치 | 설명 |
+|------|------|------|
+| [README](../README.md) | GitHub | 프로젝트 소개 |
+| [PAPER_PLAN](./paper/PAPER_PLAN.md) | GitHub | 논문 계획 |
+| 논문 작업 | `논문 작성/논문_GES/` | 로컬 논문 폴더 |
+
 ## Existing Tools Comparison
 
 | Tool | GitHub Stars | Focus | Limitation |
