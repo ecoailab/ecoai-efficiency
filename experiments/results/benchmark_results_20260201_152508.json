@@ -1,0 +1,46 @@
+[
+  {
+    "model": "BERT-base",
+    "task": "Text Classification",
+    "accuracy": 88.5,
+    "efficiency": 760584.4034318147,
+    "grade": "A+",
+    "kwh_per_1k": 0.00013147784723009358,
+    "co2_per_1k": 0.05916503125354211,
+    "hardware": "CPU",
+    "n_samples": 20
+  },
+  {
+    "model": "DistilBERT",
+    "task": "Text Classification",
+    "accuracy": 87.2,
+    "efficiency": 1549764.053727554,
+    "grade": "A+",
+    "kwh_per_1k": 6.452595139206903e-05,
+    "co2_per_1k": 0.029036678126431063,
+    "hardware": "CPU",
+    "n_samples": 20
+  },
+  {
+    "model": "TinyBERT",
+    "task": "Text Classification",
+    "accuracy": 84.5,
+    "efficiency": 11887406.450841393,
+    "grade": "A+",
+    "kwh_per_1k": 8.412263887294102e-06,
+    "co2_per_1k": 0.0037855187492823457,
+    "hardware": "CPU",
+    "n_samples": 20
+  },
+  {
+    "model": "ALBERT-base",
+    "task": "Text Classification",
+    "accuracy": 86.3,
+    "efficiency": 903034.8177933651,
+    "grade": "A+",
+    "kwh_per_1k": 0.00011073770139268569,
+    "co2_per_1k": 0.04983196562670856,
+    "hardware": "CPU",
+    "n_samples": 20
+  }
+]

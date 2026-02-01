@@ -1,0 +1,46 @@
+[
+  {
+    "model": "ResNet-50",
+    "task": "Image Classification",
+    "accuracy": 76.0,
+    "efficiency": 96690.13226537895,
+    "grade": "A",
+    "kwh_per_1k": 0.001034231701385377,
+    "co2_per_1k": 0.46540426562341963,
+    "hardware": "CPU",
+    "n_samples": 20
+  },
+  {
+    "model": "EfficientNet-B0",
+    "task": "Image Classification",
+    "accuracy": 76.0,
+    "efficiency": 255467.8638379464,
+    "grade": "A+",
+    "kwh_per_1k": 0.0003914386666787727,
+    "co2_per_1k": 0.1761474000054477,
+    "hardware": "CPU",
+    "n_samples": 20
+  },
+  {
+    "model": "MobileNetV3-Large",
+    "task": "Image Classification",
+    "accuracy": 76.0,
+    "efficiency": 524315.8961036501,
+    "grade": "A+",
+    "kwh_per_1k": 0.00019072471527781292,
+    "co2_per_1k": 0.08582612187501582,
+    "hardware": "CPU",
+    "n_samples": 20
+  },
+  {
+    "model": "MobileNetV3-Small",
+    "task": "Image Classification",
+    "accuracy": 76.0,
+    "efficiency": 1655592.401229418,
+    "grade": "A+",
+    "kwh_per_1k": 6.0401340285049324e-05,
+    "co2_per_1k": 0.027180603128272196,
+    "hardware": "CPU",
+    "n_samples": 20
+  }
+]
