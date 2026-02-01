@@ -1,11 +1,16 @@
-# ai-efficiency
+# ecoai-efficiency
 
-> Measure the energy efficiency of any AI model. One number. No excuses.
+> **GES: Green Efficiency Score** — Intelligence per Watt.
 
-[![PyPI version](https://img.shields.io/pypi/v/ai-efficiency.svg)](https://pypi.org/project/ai-efficiency/)
+[![PyPI version](https://img.shields.io/pypi/v/ecoai-efficiency.svg)](https://pypi.org/project/ecoai-efficiency/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![NeurIPS](https://img.shields.io/badge/NeurIPS-Datasets%20%26%20Benchmarks-blue)](https://neurips.cc)
 
-**ai-efficiency** gives you one metric: **how much intelligence per watt**.
+**ecoai-efficiency** measures AI energy efficiency with a unified metric.
+
+```
+GES = Accuracy (%) / Energy (kWh per 1000 inferences)
+```
 
 ```python
 from ai_efficiency import measure
@@ -28,7 +33,7 @@ There's no standard way to measure AI efficiency. Now there is.
 ## Install
 
 ```bash
-pip install ai-efficiency
+pip install ecoai-efficiency
 ```
 
 ## Quick Start
@@ -76,25 +81,25 @@ r.save("efficiency_report.pdf")  # For regulators, investors
 r.save("efficiency_report.json") # For CI/CD pipelines
 ```
 
-## The Efficiency Score
+## The Green Efficiency Score (GES)
 
 ```
                     Accuracy (or Quality Metric)
-Efficiency Score = ──────────────────────────────
-                    Energy Consumption (kWh)
+GES = ──────────────────────────────────────────────
+       Energy Consumption (kWh per 1000 inferences)
 ```
 
 Higher is better. A model with 95% accuracy using 0.001 kWh scores 95,000.
 
 ### Grades
 
-| Grade | Efficiency Score | Meaning |
-|-------|------------------|---------|
-| A+    | > 100,000        | Exceptional efficiency |
+| Grade | GES Score | Meaning |
+|-------|-----------|---------|
+| A+    | > 100,000 | Exceptional efficiency |
 | A     | 50,000 - 100,000 | Very efficient |
-| B     | 10,000 - 50,000  | Good |
-| C     | 1,000 - 10,000   | Average |
-| D     | < 1,000          | Needs optimization |
+| B     | 10,000 - 50,000 | Good |
+| C     | 1,000 - 10,000 | Average |
+| D     | < 1,000 | Needs optimization |
 
 ## Carbon Calculation
 
@@ -199,13 +204,13 @@ latex_table = compare_academic(
 
 ```bash
 # Measure a saved model
-ai-efficiency measure model.pt --data test.csv
+ecoai-efficiency measure model.pt --data test.csv
 
 # Compare multiple models
-ai-efficiency compare model_a.pt model_b.pt --data test.csv
+ecoai-efficiency compare model_a.pt model_b.pt --data test.csv
 
 # Generate compliance report
-ai-efficiency report model.pt --data test.csv --output report.pdf
+ecoai-efficiency report model.pt --data test.csv --output report.pdf
 ```
 
 ## CI/CD Integration
@@ -214,8 +219,8 @@ ai-efficiency report model.pt --data test.csv --output report.pdf
 # .github/workflows/efficiency.yml
 - name: Check AI Efficiency
   run: |
-    pip install ai-efficiency
-    ai-efficiency check model.pt --min-grade B --fail-below C
+    pip install ecoai-efficiency
+    ecoai-efficiency check model.pt --min-grade B --fail-below C
 ```
 
 ## Research
@@ -248,6 +253,19 @@ See [CONTRIBUTING.md](CONTRIBUTING.md).
 - [ ] Process-level power measurement
 - [ ] Optimization suggestions
 - [ ] Certification API
+
+## Citation
+
+If you use ecoai-efficiency in your research, please cite:
+
+```bibtex
+@software{ecoai_efficiency,
+  title = {ecoai-efficiency: Green Efficiency Score for AI},
+  author = {EcoAI Lab, Hanbat National University},
+  year = {2025},
+  url = {https://github.com/ecoailab/ecoai-efficiency}
+}
+```
 
 ## License
 

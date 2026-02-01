@@ -3,9 +3,9 @@ requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "ai-efficiency"
+name = "ecoai-efficiency"
 version = "0.2.0"
-description = "Measure the energy efficiency of any AI model. One number. No excuses."
+description = "GES: Green Efficiency Score for AI. Intelligence per Watt."
 readme = "README.md"
 license = {text = "MIT"}
 authors = [
@@ -67,13 +67,13 @@ dev = [
 ]
 
 [project.scripts]
-ai-efficiency = "ai_efficiency.cli:main"
+ecoai-efficiency = "ai_efficiency.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/ecoailab/ai-efficiency"
-Documentation = "https://github.com/ecoailab/ai-efficiency#readme"
-Repository = "https://github.com/ecoailab/ai-efficiency.git"
-Issues = "https://github.com/ecoailab/ai-efficiency/issues"
+Homepage = "https://github.com/ecoailab/ecoai-efficiency"
+Documentation = "https://github.com/ecoailab/ecoai-efficiency#readme"
+Repository = "https://github.com/ecoailab/ecoai-efficiency.git"
+Issues = "https://github.com/ecoailab/ecoai-efficiency/issues"
 
 [tool.setuptools.packages.find]
 where = ["src"]
