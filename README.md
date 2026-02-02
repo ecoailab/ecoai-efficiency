@@ -93,13 +93,15 @@ Higher is better. A model with 95% accuracy using 0.001 kWh scores 95,000.
 
 ### Grades
 
-| Grade | GES Score | Meaning |
-|-------|-----------|---------|
-| A+    | > 100,000 | Exceptional efficiency |
-| A     | 50,000 - 100,000 | Very efficient |
-| B     | 10,000 - 50,000 | Good |
-| C     | 1,000 - 10,000 | Average |
-| D     | < 1,000 | Needs optimization |
+Thresholds derived from 74-model benchmark population (NeurIPS 2026 D&B):
+
+| Grade | GES Score | Percentile | Meaning |
+|-------|-----------|------------|---------|
+| A+    | ≥ 3,265,200 | Top 10% | Exceptional efficiency |
+| A     | ≥ 1,306,469 | Top 25% | Very efficient |
+| B     | ≥ 512,892 | Top 50% | Above median |
+| C     | ≥ 187,135 | Top 75% | Below median |
+| D     | < 187,135 | Bottom 25% | Needs optimization |
 
 ## Carbon Calculation
 
@@ -259,10 +261,21 @@ See [CONTRIBUTING.md](CONTRIBUTING.md).
 If you use ecoai-efficiency in your research, please cite:
 
 ```bibtex
+@inproceedings{lee2026ges,
+  title = {GES: A Unified Metric and Benchmark for AI Energy Efficiency},
+  author = {Lee, Sangkeum},
+  booktitle = {NeurIPS 2026 Datasets and Benchmarks Track},
+  year = {2026},
+  url = {https://github.com/ecoailab/ecoai-efficiency}
+}
+```
+
+```bibtex
 @software{ecoai_efficiency,
   title = {ecoai-efficiency: Green Efficiency Score for AI},
   author = {EcoAI Lab, Hanbat National University},
   year = {2025},
+  version = {1.0.0},
   url = {https://github.com/ecoailab/ecoai-efficiency}
 }
 ```

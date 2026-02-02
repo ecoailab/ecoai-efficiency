@@ -37,7 +37,7 @@ from .carbon import (
 )
 from .constants import CARBON_INTENSITY, GRADES, HARDWARE_POWER
 
-__version__ = "0.2.0"
+__version__ = "1.0.0"  # NeurIPS 2026 D&B Paper Release
 __all__ = [
     # Core
     "measure",
